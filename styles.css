@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    padding-block: 0 4rem;
+    gap: 2rem;
+    font-family: sans-serif;
+    width: 100%;
+    grid-auto-columns: min(85vw, 35em);
+}
+
+#todo-form {
+    position: sticky;
+    top: 0px;
+    padding-top: 3rem;
+    background-color: white;
+    box-shadow: 0px -10px 0px 8px white;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+#todo-controls,
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#text-field {
+    padding-inline: 10px;
+    padding-block: 12px 8px;
+}
+
+#btn-add {
+    cursor: pointer;
+    transition: .2s background;
+    background-color: hsl(214, 100%, 47%);
+    border: 0;
+    padding-block: 9px;
+    color: white;
+    border-radius: 2px;
+}
+
+#btn-add:hover {
+    background-color: hsl(214, 100%, 40%);
+}
+
+#todo-body {
+    display: grid;
+    gap: 12px;
+}
+
+.todo-card {
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: hsla(223, 98%, 78%, 0.748);
+    align-items: baseline;
+    box-shadow: 1px 1px 2px rgba(46, 46, 46, 0.52);
+}
+
+.todo-card.done {
+    background-color: hsla(0, 98%, 78%, 0.748);
+    color: rgba(17, 17, 17, 0.719);
+}
+
+.todo-card.done .todo-content {
+    text-decoration: line-through;
+}
+
+.todo-card.empty {
+    justify-content: center;
+    gap: 10px;
+    background-color: hsla(0, 0%, 62%, 0.748);
+}
+
+.btns-menu {
+    display: flex;
+    gap: .8em;
+}
+
+.todo-content {
+    max-width: 87%;
+    text-align: justify;
+}
+
+.icons {
+    border-radius: 100%;
+    border: 0;
+    padding: 2px 3px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.undo-btn {
+    color: rgb(0, 150, 12);
+    padding: 0;
+    background-color: transparent;
+}
+
+.done-btn {
+    background-color: rgb(0, 150, 12);
+}
+
+.delete-btn {
+    background-color: rgb(221, 16, 33);
+}
+
+.icons:hover {
+    filter: brightness(.94);
+}
