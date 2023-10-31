@@ -1,0 +1,14 @@
+{
+    "name": "Cristian",
+    "age": 37,
+    "verified": false,
+    "interests": [
+        "tech",
+        "programming",
+        "dogs"
+    ],
+    "configurations": {
+        "darkMode": true,
+        "nickname": "CR_37"
+    }
+}
